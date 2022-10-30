@@ -46,43 +46,81 @@ This type of counter is normally referred to as a Down Counter, (CTD). In a bina
 
 4-bit Count Down Counter
 ### Procedure
-/* write all the steps invloved */
-
+```
+1.Create module projectname(input ,output) to start the verilog programming.
+2.create a if loop condition to increase the count in counter_up function.
+3.Similarly, create another loop for the down counter.
+4.End the verilog program using keyword endmodule.
+5.Get the timing diagram and RTL realization diagram for respective Counters.
+```
 
 
 ### PROGRAM 
-/*
+```
 Program for flipflops  and verify its truth table in quartus using Verilog programming.
-Developed by: 
-RegisterNumber:  
-*/
+Developed by: HARSHAVARDHINI M
+RegisterNumber:  212221240015
+```
 
+#### UP COUNTER
+```
+module now(input clk,input reset,output[0:3]counter);
+reg[0:3] counter_up;
+always@(posedge clk or posedge reset)
+begin
+if(reset)
+counter_up <=4'd0;
+else
+counter_up<=counter_up+4'd1;
+end
+assign counter=counter_up;
+endmodule
+```
 
-
-
-
+#### DOWN COUNTER
+```
+module dc(input clk,input reset,output[0:3]counter);
+reg[0:3] counter_down;
+always@(posedge clk or posedge reset)
+begin
+if(reset)
+counter_down <=4'd0;
+else
+counter_down<=counter_down+4'd1;
+end
+assign counter=counter_down;
+endmodule
+```
 
 ### RTL LOGIC UP COUNTER AND DOWN COUNTER  
 
 
+![uc-rtl](https://user-images.githubusercontent.com/93427208/169768632-71a6d2bd-960b-499f-be47-786c3e2485a1.png)
 
 
 
+![dc-rtl](https://user-images.githubusercontent.com/93427208/169768640-f52e9138-811c-41cb-87eb-4ef82dba554f.png)
 
 
 
 
 ### TIMING DIGRAMS FOR COUNTER  
+![downtime1](https://user-images.githubusercontent.com/93427208/169768915-394aa9b4-25dd-4e46-b4a2-977fbe090c88.png)
 
 
+![downtime2](https://user-images.githubusercontent.com/93427208/169768928-b1b707b1-b30d-460c-85b6-2a251b6970bf.png)
 
 
 
 ### TRUTH TABLE 
 
+![up_tt](https://user-images.githubusercontent.com/93427208/169768715-5d29a338-875f-4c57-9c5a-50de1d182111.jpg)
+
+![dc_tt](https://user-images.githubusercontent.com/93427208/169768810-f86f5a4d-b9f1-47b4-a982-b681069adee0.jpg)
 
 
 
 
 
 ### RESULTS 
+Thus 4 bit up and down counters is implemented and its functionality is validated.
