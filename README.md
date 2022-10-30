@@ -86,8 +86,9 @@ endmodule
 ![downtime2](https://user-images.githubusercontent.com/93427208/169768928-b1b707b1-b30d-460c-85b6-2a251b6970bf.png)
 
 ### TRUTH TABLE:
-![up_tt](https://user-images.githubusercontent.com/93427208/169768715-5d29a338-875f-4c57-9c5a-50de1d182111.jpg)
-![dc_tt](https://user-images.githubusercontent.com/93427208/169768810-f86f5a4d-b9f1-47b4-a982-b681069adee0.jpg)
+![1](https://user-images.githubusercontent.com/91781810/198869113-7671b9ff-4763-4bec-9850-b1df2cae1476.png)
+![2](https://user-images.githubusercontent.com/91781810/198869122-14a2576c-7030-4c30-82b3-3857ef4330c3.png)
+
 
 ### RESULT:
 Thus 4 bit up and down counters is implemented and its functionality is validated.
